@@ -16,5 +16,8 @@ public class Genero {
     private Integer id;
 
     private String genero;
+    
+    @OnetoMany(mappedBy = "filme")
+    private Filme filme;
 
 }
